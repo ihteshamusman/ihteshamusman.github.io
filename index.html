@@ -1,210 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ihtesham Usman | Data & Business Analytics Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0f172a, #020617);
-            color: #e2e8f0;
-            scroll-behavior: smooth;
-        }
-        header {
-            position: fixed;
-            width: 100%;
-            background: rgba(15, 23, 42, 0.85);
-            padding: 15px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            backdrop-filter: blur(12px);
-            z-index: 1000;
-        }
-        header h2 { color: #38bdf8; font-weight: 700; }
-        nav a {
-            color: #e2e8f0;
-            margin-left: 25px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: 0.3s ease;
-        }
-        nav a:hover { color: #38bdf8; }
-        section { padding: 110px 8%; }
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3.2rem;
-            background: linear-gradient(90deg, #38bdf8, #0ea5e9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: fadeIn 1.8s ease-in-out;
-        }
-        .typing {
-            margin-top: 15px;
-            font-size: 1.2rem;
-            color: #94a3b8;
-            border-right: 2px solid #38bdf8;
-            white-space: nowrap;
-            overflow: hidden;
-            width: 0;
-            animation: typing 4s steps(40, end) forwards, blink 0.8s infinite;
-        }
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 420px }
-        }
-        @keyframes blink {
-            50% { border-color: transparent }
-        }
-        .btn-group { margin-top: 30px; }
-        .btn {
-            padding: 12px 28px;
-            border-radius: 30px;
-            border: none;
-            margin: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
-        .primary { background: #38bdf8; color: #0f172a; }
-        .primary:hover { background: #0ea5e9; }
-        .secondary {
-            background: transparent;
-            border: 2px solid #38bdf8;
-            color: #38bdf8;
-        }
-        .secondary:hover {
-            background: #38bdf8;
-            color: #0f172a;
-        }
-        h2.section-title {
-            font-size: 2rem;
-            margin-bottom: 40px;
-            border-left: 5px solid #38bdf8;
-            padding-left: 15px;
-        }
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
-        .card {
-            background: rgba(30, 41, 59, 0.7);
-            padding: 25px;
-            border-radius: 18px;
-            backdrop-filter: blur(8px);
-            transition: 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
-        }
-        .card h3 { color: #38bdf8; margin-bottom: 12px; }
-        .contact a {
-            color: #38bdf8;
-            text-decoration: none;
-            display: block;
-            margin: 10px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            background: #0f172a;
-            margin-top: 60px;
-            color: #94a3b8;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ihtesham Usman | Data Analyst Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#0f172a,#020617);color:#e2e8f0;scroll-behavior:smooth}
+header{position:fixed;width:100%;background:rgba(15,23,42,.85);padding:15px 8%;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(12px);z-index:1000}
+header h2{color:#38bdf8;font-weight:800}
+nav a{color:#e2e8f0;margin-left:25px;text-decoration:none;font-weight:500;transition:.3s}
+nav a:hover{color:#38bdf8}
+section{padding:110px 8%}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.hero h1{font-size:3.2rem;background:linear-gradient(90deg,#38bdf8,#0ea5e9);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{margin-top:15px;color:#94a3b8;font-size:1.1rem;max-width:700px}
+.typing{margin-top:12px;font-size:1rem;color:#38bdf8;border-right:2px solid #38bdf8;white-space:nowrap;overflow:hidden;width:0;animation:typing 4s steps(40,end) forwards,blink .8s infinite}
+@keyframes typing{from{width:0}to{width:500px}}
+@keyframes blink{50%{border-color:transparent}}
+.btn-group{margin-top:30px}
+.btn{padding:12px 28px;border-radius:30px;border:none;margin:8px;font-weight:600;cursor:pointer;transition:.3s}
+.primary{background:#38bdf8;color:#0f172a}
+.primary:hover{background:#0ea5e9}
+.secondary{background:transparent;border:2px solid #38bdf8;color:#38bdf8}
+.secondary:hover{background:#38bdf8;color:#0f172a}
+h2.section-title{font-size:2rem;margin-bottom:40px;border-left:5px solid #38bdf8;padding-left:15px}
+.card-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:rgba(30,41,59,.7);padding:25px;border-radius:18px;backdrop-filter:blur(8px);transition:.3s}
+.card:hover{transform:translateY(-10px);box-shadow:0 10px 25px rgba(56,189,248,.2)}
+.card h3{color:#38bdf8;margin-bottom:12px}
+.badge{display:inline-block;padding:4px 10px;margin:4px;border-radius:20px;font-size:.8rem;background:#1e293b;color:#38bdf8;border:1px solid #38bdf8}
+.stats{display:flex;justify-content:center;gap:60px;text-align:center;margin-top:40px}
+.stat h3{font-size:2rem;color:#38bdf8}
+.stat p{color:#94a3b8}
+.contact a{color:#38bdf8;text-decoration:none;display:block;margin:10px 0}
+footer{text-align:center;padding:30px;background:#0f172a;margin-top:60px;color:#94a3b8}
+</style>
 </head>
 <body>
-
 <header>
-    <h2>Ihtesham Usman</h2>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<h2>Ihtesham Usman</h2>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
-
 <section class="hero">
-    <h1>Data Analytics & Business Intelligence</h1>
-    <div class="typing">Python • SQL • ERP Concepts • Databases • Dashboards</div>
-    <div class="btn-group">
-        <a href="CV.pdf" download><button class="btn primary">Download CV</button></a>
-        <a href="#projects"><button class="btn secondary">View Projects</button></a>
-    </div>
+<h1>Data Analyst & Business Intelligence Specialist</h1>
+<p>Transforming complex datasets into actionable insights through analytics, data modeling, dashboards, and decision-support systems.</p>
+<div class="typing">Python • SQL • Power BI • ERP Concepts • Data Modeling</div>
+<div class="btn-group">
+<a href="CV.pdf" download><button class="btn primary">Download CV</button></a>
+<a href="#projects"><button class="btn secondary">Explore Projects</button></a>
+</div>
+<div class="stats">
+<div class="stat"><h3>6+</h3><p>Projects</p></div>
+<div class="stat"><h3>5+</h3><p>Certifications</p></div>
+<div class="stat"><h3>4+</h3><p>Analytics Tools</p></div>
+</div>
 </section>
-
 <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>I am a Business Analytics graduate passionate about transforming raw data into actionable insights. My expertise spans Python programming, SQL querying, database modeling, ERP systems concepts, dashboard development, and business intelligence reporting. I focus on building structured data systems that support strategic decision-making.</p>
+<h2 class="section-title">About Me</h2>
+<p>I am a Business/Data Analyst focused on building scalable analytics solutions. My expertise includes Python-based data analysis, SQL querying, Power BI dashboards, database normalization, and ERP-driven business process understanding. I specialize in turning raw structured data into KPI-driven insights that support strategic business decisions.</p>
 </section>
-
 <section id="skills">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="card-container">
-        <div class="card"><h3>Programming</h3><p>Python (Pandas, Data Analysis), SQL</p></div>
-        <div class="card"><h3>Databases</h3><p>MySQL, MongoDB, SQLite, Database Design</p></div>
-        <div class="card"><h3>Analytics Tools</h3><p>Excel Dashboards, Data Visualization, Reporting</p></div>
-        <div class="card"><h3>Business Systems</h3><p>ERP Concepts, Business Process Modeling</p></div>
-        <div class="card"><h3>Core Competencies</h3><p>Data Cleaning, EDA, KPI Tracking, Decision Support Systems</p></div>
-    </div>
+<h2 class="section-title">Technical Expertise</h2>
+<div class="card-container">
+<div class="card"><h3>Programming & Analysis</h3><span class="badge">Python</span><span class="badge">Pandas</span><span class="badge">SQL</span><span class="badge">EDA</span></div>
+<div class="card"><h3>Business Intelligence</h3><span class="badge">Power BI</span><span class="badge">Excel Dashboards</span><span class="badge">DAX</span></div>
+<div class="card"><h3>Databases</h3><span class="badge">MySQL</span><span class="badge">MongoDB</span><span class="badge">SQLite</span><span class="badge">Normalization</span></div>
+<div class="card"><h3>Business Systems</h3><span class="badge">ERP Concepts</span><span class="badge">Process Modeling</span><span class="badge">KPI Tracking</span></div>
+</div>
 </section>
-
 <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="card-container">
-        <div class="card">
-            <h3>Business Analytics System</h3>
-            <p>Developed a structured SQLite-based analytics system for managing business transactions and generating performance insights.</p>
-            <a href="https://github.com/yourusername" target="_blank">View on GitHub</a>
-        </div>
-        <div class="card">
-            <h3>Sales Performance Dashboard</h3>
-            <p>Built interactive Excel dashboards to track KPIs, revenue trends, and performance metrics.</p>
-        </div>
-        <div class="card">
-            <h3>Data Cleaning & EDA</h3>
-            <p>Performed exploratory data analysis using Python to uncover patterns and optimize data-driven decisions.</p>
-        </div>
-    </div>
+<h2 class="section-title">Featured Projects</h2>
+<div class="card-container">
+<div class="card">
+<h3>IBM Data Science Capstone</h3>
+<p>Developed an end-to-end data science workflow including data cleaning, SQL querying, visualization, and model evaluation using real-world datasets.</p>
+<a href="https://github.com/ihteshamusman/DataScience-Capstone-IBM" target="_blank">View Project</a>
+</div>
+<div class="card">
+<h3>Coffee Shop Sales Analysis</h3>
+<p>Built a KPI-driven Excel dashboard analyzing revenue patterns, customer trends, and sales performance metrics.</p>
+<a href="https://github.com/ihteshamusman/Coffee-Shop-Data-Analysis" target="_blank">View Project</a>
+</div>
+<div class="card">
+<h3>Power BI Data Modeling Demo</h3>
+<p>Implemented star & snowflake schema modeling, DAX calculations, and interactive reporting dashboards.</p>
+<a href="https://github.com/ihteshamusman/PowerBI-data-modeling-demo" target="_blank">View Project</a>
+</div>
+<div class="card">
+<h3>Titanic Survival Prediction</h3>
+<p>Machine learning classification project using Logistic Regression and Random Forest with performance evaluation.</p>
+<a href="https://github.com/ihteshamusman/Titanic-Survival-Prediction-Data-Mining-Project" target="_blank">View Project</a>
+</div>
+</div>
 </section>
-
-<section id="certifications">
-    <h2 class="section-title">Certifications</h2>
-    <div class="card-container">
-        <div class="card"><h3>IBM Data Science</h3><p>Python for Data Science, Databases & SQL, Tools for Data Science</p></div>
-        <div class="card"><h3>Database Systems</h3><p>MySQL Modeling, Introduction to MongoDB</p></div>
-        <div class="card"><h3>Data Visualization</h3><p>Dashboards with Excel & BI Reporting</p></div>
-    </div>
-</section>
-
 <section id="contact" class="contact">
-    <h2 class="section-title">Contact</h2>
-    <a href="mailto:your-email@example.com">Email Me</a>
-    <a href="https://linkedin.com/in/ihtesham-usman" target="_blank">LinkedIn</a>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+<h2 class="section-title">Let’s Connect</h2>
+<a href="mailto:ihteshamusman915@gmail.com">Email Me</a>
+<a href="https://linkedin.com/in/ihtesham-usman" target="_blank">LinkedIn</a>
+<a href="https://github.com/ihteshamusman" target="_blank">GitHub</a>
 </section>
-
 <footer>
-    © 2026 Ihtesham Usman | Built with HTML, CSS & AI Assistance
+© 2026 Ihtesham Usman | Portfolio Version 2.0
 </footer>
-
 </body>
 </html>
