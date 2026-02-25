@@ -3,39 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ihtesham Usman | Data Analyst Portfolio</title>
+<title>Ihtesham Usman | Data & BI Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#0f172a,#020617);color:#e2e8f0;scroll-behavior:smooth}
-header{position:fixed;width:100%;background:rgba(15,23,42,.85);padding:15px 8%;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(12px);z-index:1000}
-header h2{color:#38bdf8;font-weight:800}
-nav a{color:#e2e8f0;margin-left:25px;text-decoration:none;font-weight:500;transition:.3s}
-nav a:hover{color:#38bdf8}
+body{font-family:'Inter',sans-serif;background:#0b1120;color:#e2e8f0;scroll-behavior:smooth;overflow-x:hidden}
 section{padding:110px 8%}
-.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
-.hero h1{font-size:3.2rem;background:linear-gradient(90deg,#38bdf8,#0ea5e9);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero p{margin-top:15px;color:#94a3b8;font-size:1.1rem;max-width:700px}
-.typing{margin-top:12px;font-size:1rem;color:#38bdf8;border-right:2px solid #38bdf8;white-space:nowrap;overflow:hidden;width:0;animation:typing 4s steps(40,end) forwards,blink .8s infinite}
-@keyframes typing{from{width:0}to{width:500px}}
-@keyframes blink{50%{border-color:transparent}}
-.btn-group{margin-top:30px}
-.btn{padding:12px 28px;border-radius:30px;border:none;margin:8px;font-weight:600;cursor:pointer;transition:.3s}
-.primary{background:#38bdf8;color:#0f172a}
-.primary:hover{background:#0ea5e9}
+header{position:fixed;width:100%;background:rgba(11,17,32,.85);padding:18px 8%;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(15px);z-index:1000}
+header h2{color:#38bdf8;font-weight:800;letter-spacing:1px}
+nav a{color:#e2e8f0;margin-left:30px;text-decoration:none;font-weight:500;transition:.3s}
+nav a:hover{color:#38bdf8}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:radial-gradient(circle at top,#0f172a,#020617)}
+.profile-img{width:150px;height:150px;border-radius:50%;border:3px solid #38bdf8;margin-bottom:25px;object-fit:cover;box-shadow:0 0 25px rgba(56,189,248,.5)}
+.hero h1{font-size:3.2rem;background:linear-gradient(90deg,#38bdf8,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{margin-top:18px;color:#94a3b8;font-size:1.1rem;max-width:750px}
+.btn-group{margin-top:35px}
+.btn{padding:14px 32px;border-radius:40px;border:none;margin:10px;font-weight:600;cursor:pointer;transition:.3s;font-size:.95rem}
+.primary{background:#38bdf8;color:#0b1120}
+.primary:hover{background:#22d3ee;box-shadow:0 0 20px #38bdf8}
 .secondary{background:transparent;border:2px solid #38bdf8;color:#38bdf8}
-.secondary:hover{background:#38bdf8;color:#0f172a}
-h2.section-title{font-size:2rem;margin-bottom:40px;border-left:5px solid #38bdf8;padding-left:15px}
-.card-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{background:rgba(30,41,59,.7);padding:25px;border-radius:18px;backdrop-filter:blur(8px);transition:.3s}
-.card:hover{transform:translateY(-10px);box-shadow:0 10px 25px rgba(56,189,248,.2)}
-.card h3{color:#38bdf8;margin-bottom:12px}
-.badge{display:inline-block;padding:4px 10px;margin:4px;border-radius:20px;font-size:.8rem;background:#1e293b;color:#38bdf8;border:1px solid #38bdf8}
-.stats{display:flex;justify-content:center;gap:60px;text-align:center;margin-top:40px}
-.stat h3{font-size:2rem;color:#38bdf8}
+.secondary:hover{background:#38bdf8;color:#0b1120}
+h2.section-title{font-size:2.2rem;margin-bottom:50px;border-left:5px solid #38bdf8;padding-left:15px}
+.card-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.card{background:rgba(30,41,59,.6);padding:30px;border-radius:20px;backdrop-filter:blur(12px);transition:.4s;border:1px solid rgba(56,189,248,.2)}
+.card:hover{transform:translateY(-12px);box-shadow:0 15px 35px rgba(56,189,248,.25)}
+.badge{display:inline-block;padding:6px 12px;margin:5px;border-radius:25px;font-size:.8rem;background:#0f172a;color:#38bdf8;border:1px solid #38bdf8}
+.stats{display:flex;justify-content:center;gap:80px;margin-top:60px;text-align:center}
+.stat h3{font-size:2.5rem;color:#38bdf8}
 .stat p{color:#94a3b8}
-.contact a{color:#38bdf8;text-decoration:none;display:block;margin:10px 0}
-footer{text-align:center;padding:30px;background:#0f172a;margin-top:60px;color:#94a3b8}
+.contact a{color:#38bdf8;text-decoration:none;display:block;margin:12px 0;font-weight:500}
+.whatsapp-float{position:fixed;width:60px;height:60px;bottom:30px;right:30px;background:#25D366;color:#fff;border-radius:50%;text-align:center;font-size:30px;box-shadow:0 5px 15px rgba(0,0,0,.4);z-index:100}
+.whatsapp-float i{margin-top:16px}
+footer{text-align:center;padding:40px;background:#020617;color:#94a3b8;margin-top:80px}
 </style>
 </head>
 <body>
@@ -49,65 +49,65 @@ footer{text-align:center;padding:30px;background:#0f172a;margin-top:60px;color:#
 </nav>
 </header>
 <section class="hero">
-<h1>Data Analyst & Business Intelligence Specialist</h1>
-<p>Transforming complex datasets into actionable insights through analytics, data modeling, dashboards, and decision-support systems.</p>
-<div class="typing">Python • SQL • Power BI • ERP Concepts • Data Modeling</div>
+<img src="profile.jpg" alt="Profile" class="profile-img">
+<h1>Data Analyst | BI Developer | ML Practitioner</h1>
+<p>Building intelligent analytics systems combining Machine Learning, Business Intelligence, and Database Engineering.</p>
 <div class="btn-group">
 <a href="CV.pdf" download><button class="btn primary">Download CV</button></a>
-<a href="#projects"><button class="btn secondary">Explore Projects</button></a>
+<a href="#projects"><button class="btn secondary">View Projects</button></a>
 </div>
 <div class="stats">
-<div class="stat"><h3>6+</h3><p>Projects</p></div>
-<div class="stat"><h3>5+</h3><p>Certifications</p></div>
-<div class="stat"><h3>4+</h3><p>Analytics Tools</p></div>
+<div class="stat"><h3 class="counter" data-target="6">0</h3><p>Projects</p></div>
+<div class="stat"><h3 class="counter" data-target="5">0</h3><p>Certifications</p></div>
+<div class="stat"><h3 class="counter" data-target="8">0</h3><p>Technologies</p></div>
 </div>
 </section>
 <section id="about">
-<h2 class="section-title">About Me</h2>
-<p>I am a Business/Data Analyst focused on building scalable analytics solutions. My expertise includes Python-based data analysis, SQL querying, Power BI dashboards, database normalization, and ERP-driven business process understanding. I specialize in turning raw structured data into KPI-driven insights that support strategic business decisions.</p>
+<h2 class="section-title">Professional Profile</h2>
+<p>Results-driven Data Analyst with expertise in ML, BI tools (Power BI, Tableau, Cognos), DBMS, SQL, and Python ecosystem including Pandas, NumPy, Matplotlib, and Scikit-Learn.</p>
 </section>
 <section id="skills">
-<h2 class="section-title">Technical Expertise</h2>
+<h2 class="section-title">Core Competencies</h2>
 <div class="card-container">
-<div class="card"><h3>Programming & Analysis</h3><span class="badge">Python</span><span class="badge">Pandas</span><span class="badge">SQL</span><span class="badge">EDA</span></div>
-<div class="card"><h3>Business Intelligence</h3><span class="badge">Power BI</span><span class="badge">Excel Dashboards</span><span class="badge">DAX</span></div>
-<div class="card"><h3>Databases</h3><span class="badge">MySQL</span><span class="badge">MongoDB</span><span class="badge">SQLite</span><span class="badge">Normalization</span></div>
-<div class="card"><h3>Business Systems</h3><span class="badge">ERP Concepts</span><span class="badge">Process Modeling</span><span class="badge">KPI Tracking</span></div>
+<div class="card"><h3>Machine Learning & Python</h3><span class="badge">Python</span><span class="badge">Pandas</span><span class="badge">NumPy</span><span class="badge">Matplotlib</span><span class="badge">Scikit-Learn</span></div>
+<div class="card"><h3>Business Intelligence</h3><span class="badge">Power BI</span><span class="badge">Tableau</span><span class="badge">Cognos</span></div>
+<div class="card"><h3>Databases</h3><span class="badge">SQL</span><span class="badge">DBMS</span><span class="badge">MySQL</span><span class="badge">MongoDB</span><span class="badge">SQLite</span></div>
 </div>
 </section>
 <section id="projects">
-<h2 class="section-title">Featured Projects</h2>
+<h2 class="section-title">Elite Project Portfolio</h2>
 <div class="card-container">
-<div class="card">
-<h3>IBM Data Science Capstone</h3>
-<p>Developed an end-to-end data science workflow including data cleaning, SQL querying, visualization, and model evaluation using real-world datasets.</p>
-<a href="https://github.com/ihteshamusman/DataScience-Capstone-IBM" target="_blank">View Project</a>
-</div>
-<div class="card">
-<h3>Coffee Shop Sales Analysis</h3>
-<p>Built a KPI-driven Excel dashboard analyzing revenue patterns, customer trends, and sales performance metrics.</p>
-<a href="https://github.com/ihteshamusman/Coffee-Shop-Data-Analysis" target="_blank">View Project</a>
-</div>
-<div class="card">
-<h3>Power BI Data Modeling Demo</h3>
-<p>Implemented star & snowflake schema modeling, DAX calculations, and interactive reporting dashboards.</p>
-<a href="https://github.com/ihteshamusman/PowerBI-data-modeling-demo" target="_blank">View Project</a>
-</div>
-<div class="card">
-<h3>Titanic Survival Prediction</h3>
-<p>Machine learning classification project using Logistic Regression and Random Forest with performance evaluation.</p>
-<a href="https://github.com/ihteshamusman/Titanic-Survival-Prediction-Data-Mining-Project" target="_blank">View Project</a>
-</div>
+<div class="card"><h3>IBM Data Science Capstone</h3><p>Full analytics workflow with modeling & visualization.</p><a href="https://github.com/ihteshamusman/DataScience-Capstone-IBM" target="_blank">View</a></div>
+<div class="card"><h3>Power BI Modeling</h3><p>Schema design & DAX dashboards.</p><a href="https://github.com/ihteshamusman/PowerBI-data-modeling-demo" target="_blank">View</a></div>
+<div class="card"><h3>Titanic ML</h3><p>Classification model comparison.</p><a href="https://github.com/ihteshamusman/Titanic-Survival-Prediction-Data-Mining-Project" target="_blank">View</a></div>
 </div>
 </section>
 <section id="contact" class="contact">
 <h2 class="section-title">Let’s Connect</h2>
-<a href="mailto:ihteshamusman915@gmail.com">Email Me</a>
+<a href="mailto:ihteshamusman915@gmail.com">Email</a>
 <a href="https://linkedin.com/in/ihtesham-usman" target="_blank">LinkedIn</a>
 <a href="https://github.com/ihteshamusman" target="_blank">GitHub</a>
 </section>
+<a href="https://wa.me/923139437915" class="whatsapp-float" target="_blank">
+<i>🟢</i>
+</a>
 <footer>
-© 2026 Ihtesham Usman | Portfolio Version 2.0
+© 2026 Ihtesham Usman | Portfolio Version 4.0 Elite
 </footer>
+<script>
+ScrollReveal().reveal('.card, .section-title, .stat, .hero h1, .hero p, .btn', { distance: '50px', duration: 1000, easing: 'ease-in-out', origin: 'bottom', interval: 100 });
+
+const counters=document.querySelectorAll('.counter');
+counters.forEach(counter=>{
+counter.innerText='0';
+const update=()=>{
+const target=+counter.getAttribute('data-target');
+const c=+counter.innerText;
+const inc=target/100;
+if(c<target){counter.innerText=`${Math.ceil(c+inc)}`;setTimeout(update,20)}else{counter.innerText=target+'+'}
+};
+update();
+});
+</script>
 </body>
 </html>
